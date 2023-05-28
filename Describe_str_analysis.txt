@@ -1,0 +1,50 @@
+OBJECTIVE:
+
+STORE'S WANT TO CREATE AN ANNUAL SALES REPORT FOR 2022. SO THAT UNDERSTAND THEIR CUSTOMERS AND GROW MORE SALES IN 2023.
+
+
+PROBLEMS:
+1. Compare the sales and orders using single chart
+2. Which month got the highest sales and orders?
+3. who purchased more- men or women in 2022?
+4. what are different order status in 2022?
+5. list top 10 states contributing to the sales?
+6. Relation beteen age and gender based on number of orders.
+7. which channel is contributing to maximum sales?
+8. highest selling category?, etc.
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+steps: 	1. look up carefully whole worksheet 
+            	2. Data cleaning 
+ 	( filtering all columns + search duplicates, null, different character+properly change data)
+     	3. Data processing (help in analysis)
+		i. create column age group (use if function) => =if(E2>=50,"Senior",IF(E2>=30,"Adult","Teenager"))
+		ii. create months (use text)=> =text(G2,"mmm") ## mmm for short form and mmm for full month name.
+	4.Data analysis process
+		i. Create Pivot Table(oder vs. Sales)
+		ii. Create pivot chart and editing
+		iii. change amount(lakhs to ma) => go to formula > number > number feild> genrel> omit general > add (0.00,,"MA")
+		iv. add in Annual repot page
+		
+		v. Next pivot table for men and women use pie chart (Men vs. women)
+		vi. add in report page
+
+		vii. Next Pivot Table for Oreder status
+		viii. Pivot Table for States
+		ix.  Pivot table for Age in Gender
+		x. Pivot table for channels
+		xi. All tables are add in Sales Report cell
+		xii. Add slicer and create relations in all table.
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+Sample Insights:
+	1. women are men likely to by compared to men (~65%)
+	2. Maharashtra, Karnataka and uttar Pradesh are the top 3 states (~35%)
+	3. Adult age group (30 - 49 yrs) is max contributing (~50%)
+	4. Amazon, Flipcart and Myntra channels are max contributing
+
+FINAL CONCLUSION TO IMPROVE THE STORE'S SALES:
+
+	1. Target Women customers of age group (30-49 yrs) living in Maharashtra, Karnataka and Uttar Pradesh by showing ads/office/coupons available on Amajon, Flipcart and Myntra.	 
